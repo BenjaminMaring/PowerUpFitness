@@ -1,0 +1,129 @@
+/* default red is fd0100 */
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    max-width: 100%;
+}
+
+.main-page-top {
+    background: url(Pictures/poolFull.jpg);
+    height: 100vh;
+    max-width: 100vw;
+    background-size: cover;
+    border-bottom: 5px solid rgba(255, 255, 255, 0.3);
+}
+
+.header {
+    width: 100%;
+    height: 6rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(46, 46, 46, 0.15);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-img {
+    width: 150px;
+}
+
+.header-text {
+    color: white;
+    font-size: calc(20px + 2vw);
+    font-family: 'Poppins', sans-serif;
+}
+
+.header-text-small {
+    color: white;
+    font-size: calc(12px + 1vw);
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-text {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.wrapper {
+    background-color: rgba(46, 46, 46, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    width: calc(150px + 33vw);
+    margin-left: 3vw;
+    padding-left: 1.5vw;
+}
+
+.main-text > .wrapper > p {
+    color: white;
+    font-size: calc(14px + 3vw);
+    font-family: 'Poppins', sans-serif;
+}
+
+.feature-selector {
+   height: 100vh;
+}
+
+.selector-wrapper {
+    height: 99vh;
+    max-width: 100vw;
+    /* Temporary Background-image for testing purposes */
+    background: url(https://www.hussle.com/blog/wp-content/uploads/2020/12/Gym-structure-1080x675.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.selector-button-wrapper {
+   width: 60rem;
+}
+
+.button-placement {
+    position: relative;
+    top: 65%;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    background-color: rgba(46, 46, 46, 0.6);
+    width: 100%;
+    height: 30%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.selector-button {
+    border: none;
+    background: none;
+    color: white;
+    height: 100%;
+    border: 1px solid white;
+}
+
+.selector-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.selected-button {
+    border: none;
+    background: none;
+    color: rgba(0, 0, 0, 0.8);
+    height: 100%;
+    border: 1px solid white;
+    background: white;
+}
+
+.button-format {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: 'Poppins', sans-serif;
+}

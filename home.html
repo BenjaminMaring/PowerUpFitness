@@ -6,8 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PowerUpFitness</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit&family=Poppins:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-    test PowerUpFitness
+   <div class="main-page-top">
+        <div class="header">
+            <!-- <p class="header-text-small">Home</p>
+            <p class="header-text-small">Pricing</p> -->
+            <img class="header-img" src="Pictures/PowerUpLogo-transparent.png">
+            <p class="header-text">Power Up Fitness</p>
+            <!-- <p class="header-text-small">Classes</p>
+            <p class="header-text-small">Contact Us</p> -->
+
+        </div>
+
+        <div class="main-text">
+            <div class="wrapper">
+                <p>Power Up Your Game</p>
+                <p>Any Time You Want.</p>
+                <p style="font-size:calc(18px + 1vw)">Enjoy our 24/7 Facility in your own time, </p>
+                <p style="font-size:calc(18px + 1vw)">on your own schedule</p>
+            </div>
+        </div>
+   </div>
+
+<!-- This section below is for the second ssection of the main page, where it will feature 3
+buttons that allow the end user to select 3 different views, all of which feature some aspect of the 
+Gym. The background page and content/size of the button should change as well. -->
+
+   <div class="feature-selector">
+        <div class="selector-wrapper">
+                <div class="selector-button-wrapper">
+
+                    <div class="button-placement">
+                            <button class="selected-button" onClick="changeSelected('Equipment')" id="Equipment">
+                                <span class="button-format">
+                                    <p style="font-size: calc(20px + 1rem);">Equipment</p>
+                                    <p>Regardless of your skill level, our gym offers a welcoming space where you can explore a full range of equipment, empowering you to reach your fitness aspirations.</p>
+                                </span>
+                            </button>
+                        
+
+                        <button class="selector-button" style="font-size: calc(20px + 1rem);">Pool</button>
+                        <button class="selector-button" style="font-size: calc(20px + 1rem);">Ball Courts</button>
+                        <button class="selector-button" style="font-size: calc(20px + 1rem);">Sauna</button>
+                    </div>
+            </div>
+        </div>
+   </div>
+      <script src="powerupFitness.JS"></script>
 </body>
 </html>
