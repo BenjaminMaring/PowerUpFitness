@@ -67,19 +67,15 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-.feature-selector {
-   height: 100vh;
-}
-
 .selector-wrapper {
     height: 99vh;
     max-width: 100vw;
-    /* Temporary Background-image for testing purposes */
     background: url(https://www.hussle.com/blog/wp-content/uploads/2020/12/Gym-structure-1080x675.png);
     background-size: cover;
     display: flex;
     justify-content: center;
 }
+
 
 .selector-button-wrapper {
    width: 60rem;
@@ -88,42 +84,57 @@ body {
 .button-placement {
     position: relative;
     top: 65%;
-    border: 2px solid rgba(255, 255, 255, 0.5);
+    border: 2px solid white;
     border-radius: 10px;
-    background-color: rgba(46, 46, 46, 0.6);
+    background-color: rgba(46, 46, 46, 0.9);
     width: 100%;
     height: 30%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
 
-.selector-button {
-    border: none;
+.inner-button {
+    display: flex;
+    flex-direction: column;
+    align-items: space-evenly;
+}
+
+.button-selected {
     background: none;
-    color: white;
-    height: 100%;
-    border: 1px solid white;
-}
-
-.selector-button:hover {
-    background-color: white;
-    color: black;
-}
-
-.selected-button {
-    border: none;
-    background: none;
-    color: rgba(0, 0, 0, 0.8);
-    height: 100%;
-    border: 1px solid white;
-    background: white;
-}
-
-.button-format {
-    height: 100%;
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    background-color: white;
+    text-decoration: none;
+    border: none;
+    
+    
+}
+
+.button-selected > p {
+    color: rgba(0, 0, 0, 0.8);
+    font-family: 'Poppins', sans-serif;;
+}
+
+.button-not-selected {
+    background: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border: none;
+    color: white;
+    transition: background-color 0.25s ease;
+    font-size: calc(20px + 1.4rem);
+    
+}
+
+.button-not-selected:hover {
+    background: white;
+    color: rgba(0, 0, 0, 0.8);;
+    text-decoration: underline;
+    transition: background-color 0.35s ease;
+    transition: color 0.25s ease;
 }

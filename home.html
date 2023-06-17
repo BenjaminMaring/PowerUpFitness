@@ -38,26 +38,27 @@
 buttons that allow the end user to select 3 different views, all of which feature some aspect of the 
 Gym. The background page and content/size of the button should change as well. -->
 
-   <div class="feature-selector">
-        <div class="selector-wrapper">
-                <div class="selector-button-wrapper">
-
-                    <div class="button-placement">
-                            <button class="selected-button" onClick="changeSelected('Equipment')" id="Equipment">
-                                <span class="button-format">
-                                    <p style="font-size: calc(20px + 1rem);">Equipment</p>
-                                    <p>Regardless of your skill level, our gym offers a welcoming space where you can explore a full range of equipment, empowering you to reach your fitness aspirations.</p>
-                                </span>
-                            </button>
-                        
-
-                        <button class="selector-button" style="font-size: calc(20px + 1rem);">Pool</button>
-                        <button class="selector-button" style="font-size: calc(20px + 1rem);">Ball Courts</button>
-                        <button class="selector-button" style="font-size: calc(20px + 1rem);">Sauna</button>
-                    </div>
+   
+     <div class="selector-wrapper" id="background">
+         <div class="selector-button-wrapper">
+            <div class="button-placement">
+                <button class="button-selected" onclick="changeSelected(Equipment)" id="Equipment">
+                        <p style="font-size: calc(20px + 1.2rem); text-decoration: underline;">Equipment</p>
+                        <p style="font-size: calc(12px + .3rem)">Regardless of your skill level, our gym offers a welcoming space where you can explore a full range of equipment.</p>
+                </button>
+                <button class="button-not-selected" id="Pool" onclick="changeSelected(Pool)">Pool</button>
+                <button class="button-not-selected" id="Courts" onclick="changeSelected(Courts)">Courts</button>
+                <button class="button-not-selected" id="Sauna" onclick="changeSelected(Sauna)">Sauna</button>
             </div>
         </div>
-   </div>
+    </div>
+   
+
+
+
+
+
+   
       <script src="powerupFitness.JS"></script>
 </body>
 </html>
