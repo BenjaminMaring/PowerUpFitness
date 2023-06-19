@@ -10,7 +10,7 @@ body {
 }
 
 .main-page-top {
-    background: url(Pictures/poolFull.jpg);
+    background: url(Pictures/weightsMain.jpg);
     height: 100vh;
     max-width: 100vw;
     background-size: cover;
@@ -21,21 +21,48 @@ body {
     width: 100%;
     height: 6rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    background-color: rgba(46, 46, 46, 0.15);
+    background-color: rgba(255, 255, 255, .9);
     position: absolute;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
+.logo {
+    width: 45vw;
+    height: 100%;
+    display: flex;
+}
+
 
 .header-img {
     width: 150px;
 }
 
 .header-text {
-    color: white;
-    font-size: calc(20px + 2vw);
+    color: rgba(0, 0, 0, 0.8);
+    font-size: calc(20px + 2.5vw);
     font-family: 'Poppins', sans-serif;
+}
+
+.links {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'Poppins', sans-serif;
+    width: 40vw;
+    max-width: 60vw;
+}
+
+.menu-link {
+    text-decoration: transparent;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: calc(20px + 1.5vw);
+}
+
+.menu-link:hover {
+    text-decoration: underline #fd0000;
+    transition: text-decoration 0.6s ease;
 }
 
 .header-text-small {
@@ -50,11 +77,10 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
 }
+
 .wrapper {
-    background-color: rgba(46, 46, 46, 0.3);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
     width: calc(150px + 33vw);
     margin-left: 3vw;
@@ -62,10 +88,12 @@ body {
 }
 
 .main-text > .wrapper > p {
-    color: white;
+    color: rgba(0, 0, 0, 0.8);
     font-size: calc(14px + 3vw);
     font-family: 'Poppins', sans-serif;
 }
+
+/* CSS for the second body of the main page */
 
 .selector-wrapper {
     height: 99vh;
@@ -74,6 +102,7 @@ body {
     background-size: cover;
     display: flex;
     justify-content: center;
+    transition: background .3s ease;
 }
 
 
@@ -84,7 +113,7 @@ body {
 .button-placement {
     position: relative;
     top: 65%;
-    border: 2px solid white;
+    border: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 10px;
     background-color: rgba(46, 46, 46, 0.9);
     width: 100%;
@@ -108,8 +137,6 @@ body {
     background-color: white;
     text-decoration: none;
     border: none;
-    
-    
 }
 
 .button-selected > p {
