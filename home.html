@@ -9,26 +9,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Poppins:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="main-page-top">
+    
 
         <!-- This is the code for the header -->
         <div class="header">
             <div class="logo">
                 <img class="header-img" src="Pictures/PowerUpLogo-transparent.png" style="border-radius: 20px;">
-                <p class="header-text" style="text-decoration: underline rgba(0, 0, 0, 0.8)">Power Up Fitness</p>
+                <p class="header-text" style="text-decoration: underline; padding-top: 10px;">Power Up Fitness</p>
             </div>
             <div class="links">
-                <a href="menu-link" class="menu-link">Classes</a>
+                <a href="https://www.mindbodyonline.com/explore/locations/power-up-fitness-studio" class="menu-link">Classes</a>
                 <a href="menu-link" class="menu-link">Pricing</a>
                 <a href="menu-link" class="menu-link">Contact Us</a>
             </div>
         </div>
 
 <!-- This section pertains to the main body on the main page -->
+<div class="main-page-top">
         <div class="main-text">
             <div class="wrapper">
                 <p>Power Up Your Game</p>
-                <p>Any Time You Want.</p>
+                <p>Any Time You Want</p>
                 <p style="font-size:calc(18px + 1vw)">Enjoy our 24/7 Facility in your own time, </p>
                 <p style="font-size:calc(18px + 1vw)">on your own schedule</p>
             </div>
@@ -40,7 +41,11 @@ gym and cleanup the space between the pictures -->
 
 <div class="buffer">
     <div class="buffer-text">
-        <p>test</p>
+        <p style="font-size: calc(15px + 0.8vw);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, unde. Quibusdam accusantium veniam repellat deserunt. Omnis, asperiores laudantium.</p>
+        <div class="line"></div>
+        <p>We are Calaveras County's premiere fitness facility offering 14,000 sq ft of exercise space, basketball, raquetball, outdoor seasonal pool and over 15 classes a week for the whole family. Featured in several publications, our courteous and professional staff has over 20 years of experience in the fitness industry. Come check us out!</p>
+        <p>Located at 145 Mangili Rd, Valley Springs, CA 95252.</p>
+        <p style="width: 80%">Stop by for a tour of the gym during <a href="">Staffed Hours</a>, or call us at <span>(209) 772-2898</span> with any questions and a member of out staff will gladly assist you.</p>
     </div>
 </div>
 
@@ -48,25 +53,88 @@ gym and cleanup the space between the pictures -->
 buttons that allow the end user to select 3 different views, all of which feature some aspect of the 
 Gym. The background page and content/size of the button should change as well. -->
 
-   
-     <div class="selector-wrapper" id="background">
-         <div class="selector-button-wrapper">
-            <div class="button-placement">
-                <button class="button-selected" onclick="changeSelected(Equipment)" id="Equipment">
-                        <p style="font-size: calc(20px + 1.2rem); text-decoration: underline;">Equipment</p>
-                        <p style="font-size: calc(12px + .3rem)">Regardless of your skill level, our gym offers a welcoming space where you can explore a full range of equipment.</p>
-                </button>
-                <button class="button-not-selected" id="Pool" onclick="changeSelected(Pool)">Pool</button>
-                <button class="button-not-selected" id="Courts" onclick="changeSelected(Courts)">Courts</button>
-                <button class="button-not-selected" id="Sauna" onclick="changeSelected(Sauna)">Sauna</button>
-            </div>
+<div class="selector-wrapper" id="background">
+    <div class="selector-button-wrapper">
+        <div class="button-placement">
+            <button class="button-selected" onclick="changeSelected(Equipment)" id="Equipment">
+                <p style="font-size: calc(20px + 1.2rem); text-decoration: underline;">Equipment</p>
+                <p style="font-size: calc(12px + .3rem)">Regardless of your skill level, our gym offers a welcoming space where you can explore a full range of equipment.</p>
+            </button>
+            <button class="button-not-selected" id="Pool" onclick="changeSelected(Pool)">Pool</button>
+            <button class="button-not-selected" id="Courts" onclick="changeSelected(Courts)">Courts</button>
+            <button class="button-not-selected" id="Sauna" onclick="changeSelected(Sauna)">Sauna</button>
         </div>
     </div>
+</div>
+
+<!-- This section is going to be the code for the review section. 
+The reviews will consists of a grid, which when the viewport shrinks 
+it will stack the reviews instead. -->
+
+<div class="review-title" style="margin-bottom: 10px;">
+    <p>Recent Class Reviews</p>
+</div>
    
+<div class="review-wrapper">
+    <div class="review-grid">
+        <div class="space-2-col grid-wrapper"> 
+            <p class="review-name">Mekynzie A</p>
+            <p class="review-date">July 6th, 2022</p>
+            <div class="review-line"></div>
+            <p class="review-bulk">Definitely a butt kicker!! Brian Pushes you through the entire class! its one of my favorite ways to pass my time. Its an excellent workout. I 100% recommend it.</p>
+        </div>
+
+        <div class="space-1-col"> 
+            <p class="review-name">Linda S</p>
+            <p class="review-date">April 6th, 2023</p>
+            <div class="review-line"></div>
+            <p class="review-bulk">This is my favorite class! Dannette is a great Instructor and makes the workout fun.</p>
+         </div>
+
+        <div class="space-2-row">
+            <p class="review-name">Jennifer F</p>
+            <p class="review-date">November 21st, 2022</p>
+            <div class="review-line"></div>
+            <p class="review-bulk">Our local gym folks retired so we are re looking at our area fitness choices.. Power Up has a lot of options . Folks are friendly.. and classes / membership affordable.</p>
+        </div>
+
+        <div class="space-1-col"> 
+            <p class="review-name">Kathie H</p>
+            <p class="review-date">March 29th, 2023</p>
+            <div class="review-line"></div>
+            <p class="review-bulk">Awesome class every time! Love the Dances, songs and workout!</p>
+        </div>
+
+        <div class="space-2-col">
+            <p class="review-name">Sunyoo A</p>
+            <p class="review-date">March 9th, 2023</p>
+            <div class="review-line"></div>
+            <p class="review-bulk">It is an awesome class with a great instructor, Nicole. I was glad to take the class. It's my favorite workout and class 👍</p>
+        </div>
+    </div>
+</div>
+
+<div class="review-title">
+    <p style="font-size: calc(14px + .6vw);">For more class reviews and a full list of available classes, check out our mind body page <a class="review-link" href="https://www.mindbodyonline.com/explore/locations/power-up-fitness-studio">Here</a></p>
+</div>
 
 
+<!-- Here is the code for the Footer -->
 
+<div class="footer-wrapper">
+    <img src="pictures/PowerUpLogo.jpg">
+    <div class="helpful-links">
+        <a href>Home</a>
+        <a href>Classes</a>
+        <a href>Pricing</a>
+        <a href>Contact Us</a>
+    </div>
+    <div>
+        <a href>Insta</a>
+        <a href>Facebook</a>
 
+    </div>
+</div>
 
    
       <script src="powerupFitness.JS"></script>
