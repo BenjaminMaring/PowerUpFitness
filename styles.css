@@ -6,7 +6,7 @@
 }
 
 body {
-    max-width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .main-page-top {
@@ -14,12 +14,12 @@ body {
     height: 90vh;
     max-width: 100vw;
     background-size: cover;
-    background-position-x: bottom;
+    background-position: 65% 30%;
     border-bottom: solid 1px black;
 }
 
 .header {
-    width: 100%;
+    width: 100vw;
     height: 6rem;
     background-color: rgba(255, 255, 255, 1);
     border-bottom: solid 1px rgba(0, 0, 0, 0.8);
@@ -30,10 +30,11 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+
 .logo {
-    width: 55vw;
     height: 100%;
     display: flex;
+    align-items: center;
 }
 
 .header-img {
@@ -42,7 +43,7 @@ body {
 
 .header-text {
     color: rgba(0, 0, 0, 0.8);
-    font-size: calc(15px + 2vw);
+    font-size: calc(18px + 1.5vw);
     font-family: 'Poppins', sans-serif;
 }
 
@@ -52,8 +53,8 @@ body {
     align-items: center;
     justify-content: space-evenly;
     font-family: 'Poppins', sans-serif;
-    width: 45vw;
-    max-width: 60vw;
+    /* width: 45vw;
+    max-width: 60vw; */
 }
 
 .menu-link {
@@ -97,13 +98,12 @@ body {
 /* CSS for the buffer below */
 
 .buffer {
-    height: 73vh;
+    height: 90vh;
     width: 100%;
-    /* background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)); */
-    /* background-color: rgba(0, 0, 0, 0.8); */
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: white;
 }
 
 .buffer-text {
@@ -119,7 +119,7 @@ body {
     /* color: white; */
     color: rgba(0, 0, 0, 0.8);
     font-family: 'Poppins', sans-serif;
-    font-size: calc(12px + 0.5vw);
+    font-size: calc(16px + 0.5vw);
     text-align: center;
 }
 
@@ -144,6 +144,8 @@ body {
     display: flex;
     justify-content: center;
     transition: background .2s ease;
+    border-bottom: solid 1px black;
+    border-top: solid 1px black;
 }
 
 
@@ -153,23 +155,19 @@ body {
 
 .button-placement {
     position: relative;
-    top: 65%;
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    top: 60%;
+    /* border: 1px solid rgba(255, 255, 255, 0.5); */
     border-radius: 10px;
     background-color: rgba(46, 46, 46, 0.6);
     width: 100%;
     height: 30%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-}
-
-.inner-button {
-    display: flex;
-    flex-direction: column;
-    align-items: space-evenly;
+    
 }
 
 .button-selected {
+    width: 100%;
     background: none;
     display: flex;
     flex-direction: column;
@@ -178,11 +176,6 @@ body {
     background-color: white;
     text-decoration: none;
     border: none;
-}
-
-.button-selected > p {
-    color: rgba(0, 0, 0, 0.8);
-    font-family: 'Poppins', sans-serif;
 }
 
 .button-not-selected {
@@ -195,8 +188,12 @@ body {
     border: none;
     color: white;
     transition: background-color 0.25s ease;
-    font-size: calc(20px + 1.4rem);
-    
+    font-size: calc(15px + 1.5rem);
+}
+
+.button-selected > p {
+    color: rgba(0, 0, 0, 0.8);
+    font-family: 'Poppins', sans-serif;
 }
 
 .button-not-selected:hover {
@@ -211,11 +208,10 @@ body {
 
 .review-title {
    min-height: 5vh;
-   /* background-color: rgba(0, 0, 0, 0.8); */
+   background-color: white;
    display: flex;
    align-items: center;
    justify-content: center;
-   margin-bottom: 5vh;
 }
 
 .review-title > p {
@@ -231,6 +227,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: white;
 }
 
 .review-grid {
@@ -327,6 +324,7 @@ body {
     align-items: center;
     position: relative;
     bottom: 0px;
+    background-color: white;
 }
 
 .footer-wrapper > img {
