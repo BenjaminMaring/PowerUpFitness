@@ -24,7 +24,7 @@ function mediaQuery(x) {
       links.innerHTML = "";
       links.className = "";
 
-      mobileLinks.innerHTML = "<a href='https://www.mindbodyonline.com/explore/locations/power-up-fitness-studio' class='menu-link'>Classes</a><a href='menu-link' class='menu-link'>Pricing</a><a href='menu-link' class='menu-link'>Contact Us</a>";
+      mobileLinks.innerHTML = "<a href='https://www.mindbodyonline.com/explore/locations/power-up-fitness-studio' class='menu-link'>Classes</a><a href='menu-link' class='menu-link'>Contact Us</a>";
       mobileLinks.classList = "safari-links";
 
       footerImg.style = "width: 150px;"
@@ -33,7 +33,7 @@ function mediaQuery(x) {
      buttonSection.style = "grid-template-columns: repeat(4, 1fr); width: 60vw;"
      buttonWrapper.style = "width: 60vw;";
 
-     links.innerHTML = "<a href='https://www.mindbodyonline.com/explore/locations/power-up-fitness-studio' class='menu-link'>Classes</a><a href='menu-link' class='menu-link'>Pricing</a><a href='menu-link' class='menu-link'>Contact Us</a>";
+     links.innerHTML = "<a href='https://www.mindbodyonline.com/explore/locations/power-up-fitness-studio' class='menu-link'>Classes</a><a href='menu-link' class='menu-link'>Contact Us</a>";
      links.classList = "links";
 
     mobileLinks.innerHTML = "";
