@@ -5,6 +5,8 @@ let menu = document.getElementById("menu");
 let logo = document.getElementById("logo");
 let mobileLinks = document.getElementById("mobile-links");
 
+let contactGrid = document.getElementById("contactGrid");
+
 let footerImg = document.getElementById("footer-img");
 
 let x = window.matchMedia("(max-width: 1100px)");
@@ -24,8 +26,10 @@ function mediaQuery(x) {
       links.innerHTML = "";
       links.className = "";
 
-      mobileLinks.innerHTML = "<a href='https://www.mindbodyonline.com/explore/locations/power-up-fitness-studio' class='menu-link'>Classes</a><a href='menu-link' class='menu-link'>Contact Us</a>";
+      mobileLinks.innerHTML = "<a href='https://www.mindbodyonline.com/explore/locations/power-up-fitness-studio' class='menu-link'>Classes</a><a href='#contact-link' class='menu-link'>Contact Us</a>";
       mobileLinks.classList = "safari-links";
+
+      contactGrid.style = "grid-template-columns: 1fr";
 
       footerImg.style = "width: 150px;"
     } else {
@@ -33,7 +37,7 @@ function mediaQuery(x) {
      buttonSection.style = "grid-template-columns: repeat(4, 1fr); width: 60vw;"
      buttonWrapper.style = "width: 60vw;";
 
-     links.innerHTML = "<a href='https://www.mindbodyonline.com/explore/locations/power-up-fitness-studio' class='menu-link'>Classes</a><a href='menu-link' class='menu-link'>Contact Us</a>";
+     links.innerHTML = "<a href='https://www.mindbodyonline.com/explore/locations/power-up-fitness-studio' class='menu-link'>Classes</a><a href='#contact-link' class='menu-link'>Contact Us</a>";
      links.classList = "links";
 
     mobileLinks.innerHTML = "";

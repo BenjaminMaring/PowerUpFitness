@@ -106,7 +106,7 @@
 /* CSS for the buffer below */
 
 .buffer {
-    height: 90vh;
+    height: 95vh;
     min-height: 500px;
     width: 100%;
     display: flex;
@@ -128,7 +128,7 @@
     /* color: white; */
     color: rgba(0, 0, 0, 0.8);
     font-family: 'Poppins', sans-serif;
-    font-size: calc(16px + 0.5vw);
+    font-size: calc(14px + 0.5vw);
     text-align: center;
 }
 
@@ -363,25 +363,25 @@
 }
 
 .staff-hours-section {
-    height:800px;
-    width: 100vw;
+    height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .staff-hours-grid {
+    min-height: 500px;
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(3, 1fr);
-    height: 80%;
+    height: 90%;
     width: 70%;
 }
 
 .staff-grid-col {
     column-span: 1;
     padding: 10px;
-    border: solid 2px red;
+    /* border: solid 2px red; */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -392,6 +392,7 @@
     font-family: 'Poppins', sans-serif;
     font-size: calc(40px + .5vw);
     font-weight: normal;
+    text-decoration: underline red;
 }
 
 .staff-grid-col > p {
@@ -401,4 +402,43 @@
 
 .hours-wrapper {
     border: solid 2px black;
+    padding: 10px;
+    width: 90%;
+}
+
+.single-day-hours {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.single-day-hours > p {
+    font-family: 'Poppins', sans-serif;
+    font-size: calc(10px + .5vw);
+}
+
+.staff-grid-col > h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: calc(30px + 1vw);
+    font-weight: normal;
+    text-decoration: underline red;
+}
+
+.contact-wrapper{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info > p {
+    font-family: 'Poppins', sans-serif;
+    margin: 5px;
+    font-size: calc(10px + .5vw);
+}
+
+#contact-link {
+    display: block;
+    position: relative;
+    top: -70px;
+    visibility: hidden;
 }
