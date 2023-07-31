@@ -363,25 +363,23 @@
 }
 
 .staff-hours-section {
-    height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .staff-hours-grid {
-    min-height: 500px;
+    height: 500px;
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(3, 1fr);
     height: 90%;
     width: 70%;
+    
 }
 
 .staff-grid-col {
     column-span: 1;
-    padding: 10px;
-    /* border: solid 2px red; */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -397,7 +395,7 @@
 
 .staff-grid-col > p {
     font-family: 'Poppins', sans-serif;
-    font-size: calc(10px + .5vw);
+    font-size: calc(15px + .3vw);
 }
 
 .hours-wrapper {
@@ -414,7 +412,7 @@
 
 .single-day-hours > p {
     font-family: 'Poppins', sans-serif;
-    font-size: calc(10px + .5vw);
+    font-size: calc(15px + .3vw);
 }
 
 .staff-grid-col > h2 {
@@ -433,7 +431,7 @@
 .contact-info > p {
     font-family: 'Poppins', sans-serif;
     margin: 5px;
-    font-size: calc(10px + .5vw);
+    font-size: calc(15px + .3vw);
 }
 
 #contact-link {

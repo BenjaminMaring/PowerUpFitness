@@ -9,7 +9,7 @@ let contactGrid = document.getElementById("contactGrid");
 
 let footerImg = document.getElementById("footer-img");
 
-let x = window.matchMedia("(max-width: 1100px)");
+let x = window.matchMedia("(max-width: 1300px)");
 mediaQuery(x) // Call listener function at run time
 x.addListener(mediaQuery) // Attach listener function on state changes
 
@@ -29,7 +29,7 @@ function mediaQuery(x) {
       mobileLinks.innerHTML = "<a href='https://www.mindbodyonline.com/explore/locations/power-up-fitness-studio' class='menu-link'>Classes</a><a href='#contact-link' class='menu-link'>Contact Us</a>";
       mobileLinks.classList = "safari-links";
 
-      contactGrid.style = "grid-template-columns: 1fr";
+      contactGrid.style = "grid-template-columns: repeat(1, 1fr); padding: 0px;";
 
       footerImg.style = "width: 150px;"
     } else {
@@ -42,6 +42,8 @@ function mediaQuery(x) {
 
     mobileLinks.innerHTML = "";
     mobileLinks.classList = "";
+
+    contactGrid.style = "";
 
     footerImg.style = "width: 250px;"
 
