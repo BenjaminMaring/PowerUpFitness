@@ -44,7 +44,7 @@ changeSelected = input => {
     Sauna.className="button-not-selected";
     Courts.innerHTML = "<p style='font-size: calc(20px + 1.2rem); text-decoration: underline;'>Courts</p> <p style='font-size: calc(12px + .3rem)'>Enjoy a 24/7 full size basket ball court as well as a racket ball court</p>"
     Courts.className="button-selected";
-    background.style = "background: url(Pictures/basketBall.jpg); height: 90vh; max-width: 100vw; background-size: cover; background-position: center right;";
+    background.style = "background: url(basketBall.jpg); height: 90vh; max-width: 100vw; background-size: cover; background-position: center right;";
 
 
    } else if (input == Pool) {
