@@ -149,7 +149,7 @@
     height: 90vh;
     min-height: 500px;
     max-width: 100vw;
-    background: url(https://storage.googleapis.com/powerupfitness/Pictures/Equipment.jpg);
+    background: url(pictures/gym.png);
     background-size: cover;
     display: flex;
     justify-content: center;

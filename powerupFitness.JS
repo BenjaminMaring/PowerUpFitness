@@ -22,7 +22,7 @@ changeSelected = input => {
     Sauna.className = "button-not-selected";
     Equipment.innerHTML = "<p style='font-size: calc(20px + 1.2rem); text-decoration: underline;'>Equipment</p> <p style='font-size: calc(12px + .3rem)'>Regardless of your skill level, our gym offers a welcoming space where you can explore a full range of equipment.</p>"
     Equipment.className="button-selected";
-    background.style = "background: url(https://storage.googleapis.com/powerupfitness/Pictures/Equipment.jpg); height: 90vh; max-width: 100vw; background-size: cover;";
+    background.style = "background: url(Pictures/gym.png); height: 90vh; max-width: 100vw; background-size: cover;";
 
 } else if (input == Sauna) {
     Equipment.innerHTML = "Equipment";
@@ -33,7 +33,7 @@ changeSelected = input => {
     Sauna.className="button-not-selected";
     Pool.innerHTML = "<p style='font-size: calc(20px + 1.2rem); text-decoration: underline;'>Pool</p> <p style='font-size: calc(12px + .3rem)'>Take a break from the heat and come relax in the pool</p>"
     Pool.className="button-selected";
-    background.style = "background: url(https://storage.googleapis.com/powerupfitness/Pictures/poolFull.jpg); height: 90vh; max-width: 100vw; background-size: cover; background-position: center;";
+    background.style = "background: url(Pictures/poolFull.png); height: 90vh; max-width: 100vw; background-size: cover; background-position: center;";
 
    } else if (input == Courts) {
     Equipment.innerHTML = "Equipment";
@@ -44,7 +44,7 @@ changeSelected = input => {
     Sauna.className="button-not-selected";
     Courts.innerHTML = "<p style='font-size: calc(20px + 1.2rem); text-decoration: underline;'>Courts</p> <p style='font-size: calc(12px + .3rem)'>Enjoy a 24/7 full size basket ball court as well as a racket ball court</p>"
     Courts.className="button-selected";
-    background.style = "background: url(basketBall.jpg); height: 90vh; max-width: 100vw; background-size: cover; background-position: center right;";
+    background.style = "background: url(pictures/basketBall.png); height: 90vh; max-width: 100vw; background-size: cover; background-position: center right;";
 
 
    } else if (input == Pool) {
@@ -56,6 +56,6 @@ changeSelected = input => {
     Courts.className="button-not-selected";
     Sauna.innerHTML = "<p style='font-size: calc(20px + 1.2rem); text-decoration: underline;'>Classes</p> <p style='font-size: calc(12px + .3rem)'>Check out the classes that we offer <a href='' style='color: black;'>Here</a></p>"
     Sauna.className="button-selected";
-    background.style = "background: url(https://storage.googleapis.com/powerupfitness/Pictures/pufClass.jpg); height: 90vh; max-width: 100vw; background-size: cover; background-position: center;";
+    background.style = "background: url(pictures/class.png); height: 90vh; max-width: 100vw; background-size: cover; background-position: center;";
    }
 }
